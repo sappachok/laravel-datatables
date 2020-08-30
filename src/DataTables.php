@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Sappachok\DataTables;
 
 use Illuminate\Support\Traits\Macroable;
 
@@ -11,14 +11,14 @@ class DataTables
     /**
      * DataTables request object.
      *
-     * @var \Yajra\DataTables\Utilities\Request
+     * @var \Sappachok\DataTables\Utilities\Request
      */
     protected $request;
 
     /**
      * HTML builder instance.
      *
-     * @var \Yajra\DataTables\Html\Builder
+     * @var \Sappachok\DataTables\Html\Builder
      */
     protected $html;
 
@@ -66,7 +66,7 @@ class DataTables
     /**
      * Get request object.
      *
-     * @return \Yajra\DataTables\Utilities\Request
+     * @return \Sappachok\DataTables\Utilities\Request
      */
     public function getRequest()
     {
@@ -76,7 +76,7 @@ class DataTables
     /**
      * Get config instance.
      *
-     * @return \Yajra\DataTables\Utilities\Config
+     * @return \Sappachok\DataTables\Utilities\Config
      */
     public function getConfig()
     {
@@ -140,13 +140,13 @@ class DataTables
     /**
      * Get html builder instance.
      *
-     * @return \Yajra\DataTables\Html\Builder
+     * @return \Sappachok\DataTables\Html\Builder
      * @throws \Exception
      */
     public function getHtmlBuilder()
     {
-        if (! class_exists('\Yajra\DataTables\Html\Builder')) {
-            throw new \Exception('Please install yajra/laravel-datatables-html to be able to use this function.');
+        if (! class_exists('\Sappachok\DataTables\Html\Builder')) {
+            throw new \Exception('Please install Sappachok/laravel-datatables-html to be able to use this function.');
         }
 
         return $this->html ?: $this->html = app('datatables.html');

@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Sappachok\DataTables;
 
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Pagination\LengthAwarePaginator;

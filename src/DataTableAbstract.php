@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Sappachok\DataTables;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
@@ -9,17 +9,17 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 use Psr\Log\LoggerInterface;
-use Yajra\DataTables\Contracts\DataTable;
-use Yajra\DataTables\Exceptions\Exception;
-use Yajra\DataTables\Processors\DataProcessor;
-use Yajra\DataTables\Utilities\Helper;
+use Sappachok\DataTables\Contracts\DataTable;
+use Sappachok\DataTables\Exceptions\Exception;
+use Sappachok\DataTables\Processors\DataProcessor;
+use Sappachok\DataTables\Utilities\Helper;
 
 /**
  * @method DataTableAbstract setTransformer($transformer)
  * @method DataTableAbstract setSerializer($transformer)
  * @property mixed transformer
  * @property mixed serializer
- * @see     https://github.com/yajra/laravel-datatables-fractal for transformer related methods.
+ * @see     https://github.com/Sappachok/laravel-datatables-fractal for transformer related methods.
  */
 abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
 {
@@ -28,7 +28,7 @@ abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
     /**
      * DataTables Request object.
      *
-     * @var \Yajra\DataTables\Utilities\Request
+     * @var \Sappachok\DataTables\Utilities\Request
      */
     public $request;
 
@@ -136,7 +136,7 @@ abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
     protected $appends = [];
 
     /**
-     * @var \Yajra\DataTables\Utilities\Config
+     * @var \Sappachok\DataTables\Utilities\Config
      */
     protected $config;
 
@@ -723,7 +723,7 @@ abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
      */
     protected function transform($results, $processed)
     {
-        if (isset($this->transformer) && class_exists('Yajra\\DataTables\\Transformers\\FractalTransformer')) {
+        if (isset($this->transformer) && class_exists('Sappachok\\DataTables\\Transformers\\FractalTransformer')) {
             return app('datatables.transformer')->transform(
                 $results,
                 $this->transformer,
@@ -809,7 +809,7 @@ abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
      *
      * @param \Exception $exception
      * @return \Illuminate\Http\JsonResponse
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \Sappachok\DataTables\Exceptions\Exception
      */
     protected function errorResponse(\Exception $exception)
     {

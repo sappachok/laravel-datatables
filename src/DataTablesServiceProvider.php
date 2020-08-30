@@ -1,11 +1,11 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Sappachok\DataTables;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
-use Yajra\DataTables\Utilities\Config;
-use Yajra\DataTables\Utilities\Request;
+use Sappachok\DataTables\Utilities\Config;
+use Sappachok\DataTables\Utilities\Request;
 
 class DataTablesServiceProvider extends ServiceProvider
 {

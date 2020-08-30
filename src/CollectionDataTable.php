@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace Sappachok\DataTables;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Arr;

@@ -6,7 +6,7 @@ if (! function_exists('datatables')) {
      * Or return the factory if source is not set.
      *
      * @param mixed $source
-     * @return \Yajra\DataTables\DataTableAbstract|\Yajra\DataTables\DataTables
+     * @return \Sappachok\DataTables\DataTableAbstract|\Sappachok\DataTables\DataTables
      */
     function datatables($source = null)
     {
