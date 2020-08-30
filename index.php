@@ -1,3 +1,3 @@
 <?php
-	echo "Hello Datatables";
+	echo "Hello Datatables !!";
 ?>
