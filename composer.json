@@ -40,7 +40,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Yajra\\DataTables\\Tests\\": "tests/"
+      "Sappachok\\DataTables\\Tests\\": "tests/"
     }
   },
   "extra": {
@@ -49,10 +49,10 @@
     },
     "laravel": {
       "providers": [
-        "Yajra\\DataTables\\DataTablesServiceProvider"
+        "Sappachok\\DataTables\\DataTablesServiceProvider"
       ],
       "aliases": {
-        "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
+        "DataTables": "Sappachok\\DataTables\\Facades\\DataTables"
       }
     }
   },
