@@ -1,0 +1,16 @@
+{
+    "name": "sappachok/laravel-datatables",
+    "type": "library",
+    "description": "Your package description goes here",
+    "keywords": ["laravel","datatables"],
+    "homepage": "https://www.facebook.com/sappachok/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sappachok Singhasuwan",
+            "email": "suppachok_sin@nstru.ac.th",
+            "homepage": "https://www.facebook.com/sappachok/",
+            "role": "Developer"
+        }
+    ],
+}
